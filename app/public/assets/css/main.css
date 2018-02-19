@@ -1,0 +1,19 @@
+
+#cover-image {
+    width: 1024px;
+}
+.callout {
+    width: 440px;
+    height: 210px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.greeting .glyphicon {
+    color: rgb(255, 100, 100)
+}
+
+.greeting {
+    font-family: 'Crete Round', serif;
+    font-size: 24px;
+    color: rgb(255, 252, 100);
+}

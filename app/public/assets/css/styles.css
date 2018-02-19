@@ -1,0 +1,39 @@
+
+/* ----  Main Navbar  ---------- */
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar-brand {
+    min-height: 131px;
+}
+#homespae-logo {
+    width: 217px;
+}
+.main-navbar {
+    /* min-height: 131px; */
+    display: flex;
+    justify-content: center;
+}
+.main-navbar li {
+    align-self: center;
+}
+/* ----  Main Content  ---------- */
+.main-content {
+    padding-right: 0;
+    padding-left: 0;
+}
+.home-banner {
+    background: url('../img/home-cover-image.jpg') center / cover no-repeat;
+    width: 1444px;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* ==========  MEDIA QUERY  ========== */
+
+/* ----  768px Screen size  ---- */
+@media (min-width: 768px)
+.navbar {
+    border-radius: 0;
+}
