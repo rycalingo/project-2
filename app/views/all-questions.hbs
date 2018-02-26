@@ -1,8 +1,8 @@
 
 {{#each questionnaire }}
   {{q}}
-   Yes:<input type="checkbox" id="myCheck">
-   No:<input type="checkbox" id="myCheck">
-  <br>
-  <hr>
+<form>
+  <input type="radio" name="selection" value="yes"> Yes
+  <input type="radio" name="selection" value="no"> No
+</form>
 {{/each}}
