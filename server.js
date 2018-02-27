@@ -35,6 +35,7 @@ app.set('view engine', '.hbs');
 //Models
 var models = require("./models");
 
+
 //Routes
 var authRoute = require('./routes/auth.js')(app,passport);
 
@@ -167,7 +168,7 @@ app.get("/category1", function (req, res) {
 
 app.get('/', function (req, res) {
 
-    res.send('Welcome to Passport with Sequelize');
+    res.send('mainpage');
 
 });
 
@@ -176,23 +177,27 @@ app.get("/main", function(req,res){
 });
 
 app.get("/about_us", function(req,res){
-  res.render("aboutus.hbs");
+  res.render("aboutus");
 });
 
 app.get("/make_an_appointment", function(req,res){
-  res.render("make_an_appointment.hbs");
+  res.render("make_an_appointment");
 });
 
 app.get("/contact_us", function(req,res){
-  res.render("contact_us.hbs");
+  res.render("contact_us");
 });
 
+app.get("/chat", function (req, res) {
+    res.render("chat");
+  })
+
 app.get("/doctors_and_therapist", function(req,res){
-  res.render("doctors_and_therapist.hbs");
+  res.render("doctors_and_therapist");
 })
 
 app.get("/supportive_resources", function(req,res){
-  res.render("supportive_resources.hbs");
+  res.render("supportive_resources");
 })
 app.listen(5000, function (err) {
 
