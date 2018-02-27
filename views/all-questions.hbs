@@ -7,6 +7,10 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- local styles -->
+<link rel="stylesheet" href="/assets/css/ques.css" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/quest.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 {{#each questionnaire }}
 <div class="container-fluid bg-info">
@@ -15,7 +19,7 @@
       <div class="modal-header">
          
         <h3>
-          <span class="label label-warning" id="qid">2</span> {{q}}</h3>
+          <span class="label label-warning" id="qid"></span> {{q}}</h3>
       </div>
       <div class="modal-body">
         <div class="col-xs-3 col-xs-offset-5">
@@ -36,12 +40,12 @@
             <span class="btn-label">
               <i class="glyphicon glyphicon-chevron-right"></i>
             </span>
-            <input type="radio" name="q_answer" value="1">1 Yes</label>
+            <input type="radio" name="q_answer" value="1">Yes</label>
           <label class="element-animation2 btn btn-lg btn-primary btn-block">
             <span class="btn-label">
               <i class="glyphicon glyphicon-chevron-right"></i>
             </span>
-            <input type="radio" name="q_answer" value="2">2 No</label>
+            <input type="radio" name="q_answer" value="2">No</label>
         </div>
       </div>
       <div class="modal-footer text-muted">
