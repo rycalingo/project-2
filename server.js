@@ -4,7 +4,7 @@ var app = express();
 var passport = require('passport')
 // For Passport
 // persistent login sessions
-
+app.use(express.static("public"));
 var session = require('express-session')
 
 app.use(session({ secret: 'keyboard cat', resave: true, saveUninitialized: true })); 
@@ -19,27 +19,27 @@ app.use(passport.session());
 var bodyParser = require('body-parser')
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars')
 
 //For Handlebars
-app.set('views', './app/views')
+// app.set('views', './app/views')
 app.engine('hbs', exphbs({
+    defaultLayout: "main",
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
 
 //Models
-var models = require("./app/models");
+var models = require("./models");
 
 //Routes
-var authRoute = require('./app/routes/auth.js')(app,passport);
+var authRoute = require('./routes/auth.js')(app,passport);
 
 //load passport strategies
-require('./app/config/passport/passport.js')(passport, models.user);
+require('./config/passport/passport.js')(passport, models.user);
 
 // Data for Questionnaires
 var questions = [
@@ -171,7 +171,29 @@ app.get('/', function (req, res) {
 
 });
 
+app.get("/main", function(req,res){
+  res.render("mainpage");
+});
 
+app.get("/about_us", function(req,res){
+  res.render("aboutus.hbs");
+});
+
+app.get("/make_an_appointment", function(req,res){
+  res.render("make_an_appointment.hbs");
+});
+
+app.get("/contact_us", function(req,res){
+  res.render("contact_us.hbs");
+});
+
+app.get("/doctors_and_therapist", function(req,res){
+  res.render("doctors_and_therapist.hbs");
+})
+
+app.get("/supportive_resources", function(req,res){
+  res.render("supportive_resources.hbs");
+})
 app.listen(5000, function (err) {
 
     if (!err)
