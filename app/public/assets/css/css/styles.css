@@ -1,0 +1,108 @@
+
+/* ----- Used Fonts ----- */
+/* 
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Cutive', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+
+/* -----  Main Navbar  ----- */
+
+.nav-item { font-family: 'Open Sans', sans-serif; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #65a243;
+}
+#loginBtn {
+    color: #ffffff;
+    background-color: #65a243;
+}
+#loginBtn:hover {
+    color: #ffffff;
+    background-color: #375a25;
+}
+/* ----  Main Content  ---------- */
+.main-content {
+    padding-right: 0;
+    padding-left: 0;
+}
+#homespae-logo {
+    width: 450px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+
+.home-banner {
+    background: url('../img/CoverImage_v0.jpg') center / 100% auto no-repeat;
+    /* width: 1444px; */
+    height: 600px;
+    overflow: hidden;
+    margin-top: 52px;
+}
+.text-bg {
+    margin-left: 270px;
+    display: inline-block;
+    width: 590px;
+    height: 100%;
+    background: rgba(134, 134, 134, 0.4);
+}
+.greeting {
+    margin-top: 220px;
+    padding: 70px 30px 0;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.greeting .fa-heart {
+    color: #ff2323;
+}
+.yellow-font, .yellow-font *  { 
+    color: #fff200
+}
+.berkshire-font, .berkshire-font * { 
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.section {
+    background: url('../img/CoverImage_v1.jpg') center / 100% auto no-repeat;
+    /* width: 1444px; */
+    height: 600px;
+    margin-top: 52px;
+    overflow: hidden;
+    position: relative;
+}
+.section {
+    color: #ffffff;
+}
+.section .text-bg {
+    padding: 50px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.section .aside {
+    position: absolute;
+    width: 240px;
+    padding: 40px 0 0 30px;;
+}
+.section .aside p {
+    font-family: 'Merriweather', serif;
+    font-size: 34px;
+}
+
+#chat_Button {
+    position: fixed;
+    width: 70px;
+    bottom: 10px;
+    right: 90px;
+}
+/* ==========  MEDIA QUERY  ========== */
+
+/* ----  768px Screen size  ---- */
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
