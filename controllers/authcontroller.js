@@ -13,9 +13,9 @@ exports.signin = function (req, res) {
 
 }
 
-exports.dashboard = function (req, res) {
+exports.mainpage = function (req, res) {
 
-    res.render('dashboard');
+    res.render('mainpage');
 
 }
 
