@@ -1,0 +1,26 @@
+
+.bio-column {
+    margin-left: 270px;
+    display: inline-block;
+    width: 590px;
+    height: 100%;
+    background: #fff2004f;
+
+    padding: 50px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.bio-bg-section .row {
+    justify-content: space-evenly;
+}
+.bio-bg-section .image_frame {
+    width: 170px;
+}
+
+.bio-modal .modal-content {
+    padding: 20px;
+    width: 500px;
+
+}
+.bio-bg-section {
+    background: url('../img/CoverImage_v5.jpg') center / 100% auto no-repeat;
+}

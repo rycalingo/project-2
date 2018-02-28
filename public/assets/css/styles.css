@@ -41,7 +41,7 @@
     overflow: hidden;
     margin-top: 52px;
 }
-.text-bg {
+.column {
     margin-left: 270px;
     display: inline-block;
     width: 40.972222%; /* 590 / 1444 */
@@ -66,36 +66,38 @@
 .berkshire-font, .berkshire-font * { 
     font-family: 'Berkshire Swash', cursive;
 }
-
 .welcome-section {
     background: url('../img/CoverImage_v1.jpg') center / 100% auto no-repeat;
+}
+.page-section {
     /* width: 1444px; */
     height: 600px;
     margin-top: 40px;
     overflow: hidden;
     position: relative;
 }
-.welcome-section {
+.page-section {
     color: #ffffff;
 }
-.welcome-section .text-bg {
+.page-section .column {
     padding: 50px 20px;
     font-family: 'Open Sans', sans-serif;
 }
-.welcome-section .aside {
+.page-section .aside {
     position: absolute;
     width: 240px;
     padding: 40px 0 0 30px;;
 }
-.welcome-section .aside p {
+.page-section .aside p {
     font-size: 32px;
 }
 
 #chat_Button {
     position: fixed;
     width: 90px;
-    bottom: 60px;
+    bottom: 10px;
     right: 90px;
+    z-index: 11;
 }
 /* ==========  MEDIA QUERY  ========== */
 

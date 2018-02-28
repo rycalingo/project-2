@@ -200,8 +200,8 @@ app.get("/supportive_resources", function(req,res){
   res.render("supportive_resources");
 })
 
-app.get("/alt", function(req,res){
-  res.render("alt_page");
+app.get("/aboutus", function(req,res){
+  res.render("aboutus");
 })
 
 app.listen(5000, function (err) {
