@@ -168,7 +168,7 @@ app.get("/category1", function (req, res) {
 
 app.get('/', function (req, res) {
 
-    res.send('mainpage');
+    res.render("mainpage");
 
 });
 
@@ -199,6 +199,11 @@ app.get("/doctors_and_therapist", function(req,res){
 app.get("/supportive_resources", function(req,res){
   res.render("supportive_resources");
 })
+
+app.get("/alt", function(req,res){
+  res.render("alt_page");
+})
+
 app.listen(5000, function (err) {
 
     if (!err)
