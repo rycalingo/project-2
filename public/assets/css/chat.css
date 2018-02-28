@@ -1,3 +1,6 @@
 #chat-section {
     background: url('../img/CoverImage_v0.jpg') center / 100% auto no-repeat;
 }
+.column {
+    background: #64a24383;
+}
