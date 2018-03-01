@@ -5,9 +5,14 @@
     font-family: 'Cutive', serif;
     font-family: 'Merriweather', serif;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', 'Arial', sans-serif;
 */
 
 /* -----  Main Navbar  ----- */
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
 
 .nav-item { font-family: 'Open Sans', sans-serif; }
 
@@ -98,6 +103,7 @@
     bottom: 10px;
     right: 90px;
     z-index: 11;
+    cursor: pointer;
 }
 
 #questionairBtn {
@@ -106,6 +112,14 @@
     margin-top: 20px;
     left: 680px;
 }
+
+/* .home-banner {
+    opacity: 0;
+    transition: opacity all 1s;
+}
+.home-banner.FADE-IN {
+    opacity: 1;
+} */
 /* ==========  MEDIA QUERY  ========== */
 
 /* ----  768px Screen size  ---- */
