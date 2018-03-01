@@ -14,8 +14,14 @@
 }
 .bio-bg-section .image_frame {
     width: 170px;
+    cursor: pointer;
 }
-
+.bio-content {
+    padding: 20px 20px;
+}
+.bio-content h3 {
+    margin-bottom: 20px;
+}
 .bio-modal .modal-content {
     padding: 20px;
     width: 500px;
