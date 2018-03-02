@@ -195,7 +195,7 @@ app.get("/chat", function (req, res) {
   });
 
 app.get("/doctors_and_therapist", function(req,res){
-  res.render("doctors_and_therapist");
+  res.render("docthera");
 });
 
 app.get("/supportive_resources", function(req,res){
