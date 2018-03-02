@@ -106,7 +106,7 @@ var questions = [
     q: "Do you have problems concentrating?"
   }, {
     q: "Has there ever been a period of time when you felt so good or so hyper that other people thought you were not your normal self or you were so hyper that you got into trouble ?"
-}, {
+  }, {
     q: "Have you been so irritable that you shouted at people or started fights or arguments ?"
   }, {
     q: "Do you feel much more self - confident than usual ?"
@@ -144,7 +144,7 @@ var questions = [
     q: "Do you often exhibit odd behavior, such as repeating the same movements, or in other cases, do you stand still in the same position for hours?"
   }, {
     q: "Do you believe that different colors convey different messages?"
-  },                            
+  }                         
 ];
 
 
@@ -173,7 +173,9 @@ app.get('/', function (req, res) {
 });
 
 app.get("/main", function(req,res){
+  
   res.render("mainpage");
+
 });
 
 app.get("/about_us", function(req,res){
@@ -190,19 +192,23 @@ app.get("/contact_us", function(req,res){
 
 app.get("/chat", function (req, res) {
     res.render("chat");
-  })
+  });
 
 app.get("/doctors_and_therapist", function(req,res){
   res.render("doctors_and_therapist");
-})
+});
 
 app.get("/supportive_resources", function(req,res){
   res.render("supportive_resources");
-})
+});
 
 app.get("/aboutus", function(req,res){
   res.render("aboutus");
-})
+});
+
+app.get("/signupx", function (req, res) {
+      res.render("signupx");
+});
 
 app.listen(5000, function (err) {
 
