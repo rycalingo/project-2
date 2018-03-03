@@ -210,6 +210,12 @@ app.get("/signupx", function (req, res) {
       res.render("signupx");
 });
 
+  app.post("/main", function(req,res){
+    models.appointment.create (req.body).then(function(dbappointment){
+        res.end(dbappointment);
+})
+  });
+
 app.listen(5000, function (err) {
 
     if (!err)
