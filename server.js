@@ -195,7 +195,7 @@ app.get("/chat", function (req, res) {
   });
 
 app.get("/doctors_and_therapist", function(req,res){
-  res.render("doctors_and_therapist");
+  res.render("docthera");
 });
 
 app.get("/supportive_resources", function(req,res){
@@ -209,6 +209,12 @@ app.get("/aboutus", function(req,res){
 app.get("/signupx", function (req, res) {
       res.render("signupx");
 });
+
+  app.post("/main", function(req,res){
+    models.appointment.create (req.body).then(function(dbappointment){
+        res.end(dbappointment);
+})
+  });
 
 app.listen(5000, function (err) {
 

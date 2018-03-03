@@ -247,51 +247,8 @@ module.exports = function (sequelize, Sequelize) {
             type: Sequelize.BOOLEAN,
             defaultValue: false
         },
-    });  
-
-    // var User = sequelize.define('docthera', {
-
-    //     id: {
-    //         autoIncrement: true,
-    //         primaryKey: true,
-    //         type: Sequelize.INTEGER
-    //     },
-
-    //     firstname: {
-    //         type: Sequelize.STRING,
-    //         notEmpty: true
-    //     },
-
-    //     lastname: {
-    //         type: Sequelize.STRING,
-    //         notEmpty: true
-    //     },
-
-    //     phone: {
-    //         type: Sequelize.STRING,
-    //         notEmpty: true
-    //     },
-
-    //     specializaation: {
-    //         type: Sequelize.STRING,
-    //         notEmpty: true
-    //     },
-
-    // let transporter = nodemailer.createTransport({
-    //     sendmail: true,
-    //     newline: 'unix',
-    //     path: '/usr/sbin/sendmail'
-    // });
-    // transporter.sendMail({
-    //     from: 'sender@example.com',
-    //     to: 'recipient@example.com',
-    //     subject: 'Message',
-    //     text: 'I hope this message gets delivered!'
-    // }, (err, info) => {
-    //     console.log(info.envelope);
-    //     console.log(info.messageId);
-    // });
-
+    })
+      
     return User;
 
 }
