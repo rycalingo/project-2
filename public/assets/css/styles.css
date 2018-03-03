@@ -35,7 +35,7 @@ body {
 #homespae-logo {
     width: 450px;
     position: absolute;
-    top: 70px;
+    top: 10px;;
     left: 40px;
 }
 
@@ -112,14 +112,33 @@ body {
     margin-top: 20px;
     left: 680px;
 }
-
-/* .home-banner {
-    opacity: 0;
-    transition: opacity all 1s;
+.group-greeting {
+    position: relative;
+    z-index: 5;
+    top: 0;
+    height: 600px;
 }
-.home-banner.FADE-IN {
+.home-banner {
+    position: relative;
+}
+.intro-slider {
+    width: 1444px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+}
+.intro-slider .slider-img {
+    width: 1470px;
+    position: absolute;
+    top: -50px;
     opacity: 1;
-} */
+    transition: opacity 0.5s;
+}
+.slide-img.FADE {
+    opacity: 0;
+}
+
+
 /* ==========  MEDIA QUERY  ========== */
 
 /* ----  768px Screen size  ---- */

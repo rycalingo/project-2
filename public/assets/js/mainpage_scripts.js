@@ -1,10 +1,10 @@
 
-// $(document).ready(function(){
-        
-//     var homeBanner = $('.home-banner');
-        
-//     setTimeout({
-//         $homeBanner.addClass("FADE-IN");
-//     },500);
-    
-// });
+$(document).ready(function(){
+    var i;
+    if ( i <= 4) {
+        setTimeout(function(){
+            $('#img' + i);
+            i++;
+        }, 500);
+    }
+});
