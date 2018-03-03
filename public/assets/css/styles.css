@@ -33,14 +33,14 @@ body {
     padding-left: 0;
 }
 #homespae-logo {
-    width: 450px;
+    width: 400px;
     position: absolute;
-    top: 10px;;
+    top: 60px;
     left: 40px;
 }
 
 .home-banner {
-    background: url('../img/CoverImage_v0.jpg') center / 100% auto no-repeat;
+    background: url('../img/CoverImage_v5.jpg') center / 100% auto no-repeat;
     /* width: 1444px; */
     height: 600px;
     overflow: hidden;
@@ -131,11 +131,11 @@ body {
     width: 1470px;
     position: absolute;
     top: -50px;
-    opacity: 1;
-    transition: opacity 0.5s;
+    transition: opacity 1s ease-in;
 }
-.slide-img.FADE {
-    opacity: 0;
+
+.intro-slider .slider-img.FADE {
+    opacity: 0 !important;
 }
 
 

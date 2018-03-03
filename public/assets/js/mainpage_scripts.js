@@ -1,10 +1,12 @@
 
 $(document).ready(function(){
-    var i;
-    if ( i <= 4) {
-        setTimeout(function(){
-            $('#img' + i);
+    var i = 0;
+    if ( i <= 4 ) {
+
+        setInterval(function(){
+            var img_n = '#img' + i;
+            $(img_n).addClass("FADE");
             i++;
-        }, 500);
+        }, 1000);
     }
 });
