@@ -33,14 +33,14 @@ body {
     padding-left: 0;
 }
 #homespae-logo {
-    width: 450px;
+    width: 400px;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 40px;
 }
 
 .home-banner {
-    background: url('../img/CoverImage_v0.jpg') center / 100% auto no-repeat;
+    background: url('../img/CoverImage_v5.jpg') center / 100% auto no-repeat;
     /* width: 1444px; */
     height: 600px;
     overflow: hidden;
@@ -112,14 +112,33 @@ body {
     margin-top: 20px;
     left: 680px;
 }
-
-/* .home-banner {
-    opacity: 0;
-    transition: opacity all 1s;
+.group-greeting {
+    position: relative;
+    z-index: 5;
+    top: 0;
+    height: 600px;
 }
-.home-banner.FADE-IN {
-    opacity: 1;
-} */
+.home-banner {
+    position: relative;
+}
+.intro-slider {
+    width: 1444px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+}
+.intro-slider .slider-img {
+    width: 1470px;
+    position: absolute;
+    top: -50px;
+    transition: opacity 1s ease-in;
+}
+
+.intro-slider .slider-img.FADE {
+    opacity: 0 !important;
+}
+
+
 /* ==========  MEDIA QUERY  ========== */
 
 /* ----  768px Screen size  ---- */
